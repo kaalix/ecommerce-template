@@ -4,8 +4,8 @@
 /*========VARIABLES CSS=========*/
 :root{
 	--header-height: 3rem;
-	--font-semi:600;
-	--font-bold:700;
+	--font-semi: 600;
+	--font-bold: 700;
 }
 
 /*========Colores=========*/
@@ -22,12 +22,12 @@
 /*========Fuente y tipografia=========*/
 
 :root{
-	--body-font:'Open Sans';
-	--big-font-size:3rem;
-	--h1-font-size:1.5rem;
-	--h2-font-size:1.25rem;
-	--normal-font-size:.938rem;
-	--small-font-size:.75rem;
+	--body-font: 'Open Sans', sans-serif;
+	--big-font-size: 3rem;
+	--h1-font-size: 1.5rem;
+	--h2-font-size: 1.25rem;
+	--normal-font-size: .938rem;
+	--small-font-size: .75rem;
 }
 
 /*========Margenes=========*/
@@ -52,16 +52,17 @@
 /*=======z index=========*/
 
 :root{
-	--z-tooltip:10;
-	--z-fixed:100;
+	--z-tooltip: 10;
+	--z-fixed: 100;
 
 }
 
 
 /*=======BASE=========*/
 
-*,::before,::after{
-	box-sizing: border-box;
+*, ::before, ::after {
+    box-sizing: border-box;
+    /* font-size: 1.5rem; */
 }
 
 html{
@@ -71,9 +72,9 @@ html{
 body{
 
 	margin: var(--header-height) 0 0 0;
-	font-family:var(--body-font);
+	font-family: var(--body-font);
 	font-size: var(--normal-font-size);
-	color:var(--dark-color);
+	color: var(--dark-color);
 	line-height: 1.6;
 }
 
@@ -106,7 +107,7 @@ img{
 
 .section-title{
 	font-size: var(--h2-font-size);
-	color:var(--dark-color);
+	color: var(--dark-color);
 	margin: var(--mb-4) 0 var(--mb-1);
 	text-align: center;
 }
@@ -124,8 +125,8 @@ img{
 
 /*===LAYOUT=====*/
 
-.bd-grid{
-	max-width: 1024px;
+ .bd-grid{
+	/*max-width: 1024px; */
 	display: grid;
 	grid-template-columns: 100%;
 	grid-column-gap: 2rem;
@@ -137,6 +138,7 @@ img{
 
 .l-header{
 	width: 100%;
+	height: 80px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -149,13 +151,13 @@ img{
 
 .nav{
 	height: var(--header-height);
+	margin-top: 30px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-@media screen and (max-width:768px){
-
+@media screen and ( max-width: 768){
 	.nav__menu{
 		position: fixed;
 		top: var(--header-height);
@@ -182,18 +184,20 @@ img{
 }
 
 .nav__logo{
+	/* font-size: 1rem; */
 	font-weight: var(--font-bold);
 }
 
 .nav__cart{
-	font-size: 1.5rem;
+	font-size: 2rem;
 	margin-right: var(--mb-2);
 }
 
 .nav__toogle{
-	font-size: 1.5rem;
+	font-size: 2000rem;
 	cursor: pointer;
 }
+
 /*=====SHOW MENU=====*/
 .show{
 	right:0;
