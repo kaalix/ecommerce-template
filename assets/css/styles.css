@@ -157,10 +157,10 @@ img{
 	align-items: center;
 }
 
-@media screen and ( max-width: 768){
+@media screen and ( max-width: 768px){
 	.nav__menu{
 		position: fixed;
-		top: var(--header-height);
+		top: calc(var(--header-height)+5rem);
 		right: -100%;
 		width: 80%;
 		height: 100%;
